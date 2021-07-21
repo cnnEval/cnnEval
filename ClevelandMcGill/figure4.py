@@ -21,8 +21,8 @@ class Figure4:
         # now we need 8 more pairs
         all_values = [0] * 10
         all_values[0] = np.random.randint(5, 86)
-        all_values[1] = data[0]  # fixed pos 1
-        all_values[2] = data[1]  # fixed pos 2
+        all_values[1] = data[0] - 1  # fixed pos 1
+        all_values[2] = data[1] - 1 # fixed pos 2
         all_values[3] = np.random.randint(5, 86)
         all_values[4] = np.random.randint(5, 86)
         all_values[5] = np.random.randint(5, 86)
@@ -73,7 +73,7 @@ class Figure4:
 
         # we build the barchart to the top
         all_values = [0] * 8
-        all_values[0] = data[0]  # fixed pos but max. 56
+        all_values[0] = data[0] - 1  # fixed pos but max. 56
         current_max = 98-all_values[0]
         # print current_max/4.+1
         all_values[1] = np.random.randint(3, current_max//3.+1)
@@ -103,7 +103,7 @@ class Figure4:
                 # mark the max
                 barchart[99-int(d)//2:99-int(d)//2+1, 25:26] = 1
 
-        all_values[4] = data[1]  # fixed pos but max. 56
+        all_values[4] = data[1] - 1  # fixed pos but max. 56
         current_max = 98-all_values[4]
         # print current_max/4.+1
         all_values[5] = np.random.randint(3, current_max//3.+1)
@@ -146,7 +146,7 @@ class Figure4:
         # now we need 8 more pairs
         all_values = [0] * 10
         all_values[0] = np.random.randint(5, 86)
-        all_values[1] = data[0]  # fixed pos 1
+        all_values[1] = data[0] - 1  # fixed pos 1
         all_values[2] = np.random.randint(5, 86)
         all_values[3] = np.random.randint(5, 86)
         all_values[4] = np.random.randint(5, 86)
@@ -198,7 +198,7 @@ class Figure4:
         # we build the barchart to the top
         all_values = [0] * 8
 
-        current_max = 98-data[0]
+        current_max = 98 - (data[0] - 1)
 
         all_values[0] = np.random.randint(3, current_max//3.+1)
 
@@ -208,7 +208,7 @@ class Figure4:
 
         below_last_sum = np.sum(all_values[0:3])
 
-        all_values[3] = data[0]
+        all_values[3] = data[0] - 1
 
         current_max = np.sum(all_values[0:4])
 
@@ -250,7 +250,7 @@ class Figure4:
                 # this happens around 10 times in 100.000 samples.. so not really important
                 raise Exception()
 
-            current_max = 98-data[1]
+            current_max = 98 - (data[1] - 1)
 
             all_values[4] = np.random.randint(3, current_max//3.+1)
 
@@ -260,7 +260,7 @@ class Figure4:
 
             below_last_sum2 = np.sum(all_values[4:8])
 
-            all_values[7] = data[1]
+            all_values[7] = data[1] - 1
 
             current_max = np.sum(all_values[4:])
             above_last_sum2 = current_max
@@ -303,7 +303,7 @@ class Figure4:
         # we build the barchart to the top
         all_values = [0] * 8
 
-        current_max = 98-data[0]-data[1]
+        current_max = 98 - (data[0] - 1) - (data[1] - 1)
 
         if current_max <= 6:
             # this won't work
@@ -313,9 +313,9 @@ class Figure4:
 
         all_values[1] = np.random.randint(3, current_max//2.+1)
 
-        all_values[2] = data[0]
+        all_values[2] = data[0] - 1
 
-        all_values[3] = data[1]
+        all_values[3] = data[1] - 1
 
         current_max = np.sum(all_values[0:4])
 
