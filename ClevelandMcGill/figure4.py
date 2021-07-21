@@ -60,7 +60,7 @@ class Figure4:
             if i == 1 or i == 2:
                 # mark the max
                 # place dot here
-                barchart[96:97, left_bar+b_width//2:left_bar+b_width//2+1] = 1
+                barchart[97:98, left_bar+b_width//2:left_bar+b_width//2+1] = 1
 
         return barchart
 
@@ -151,7 +151,7 @@ class Figure4:
         all_values[3] = np.random.randint(5, 86)
         all_values[4] = np.random.randint(5, 86)
         all_values[5] = np.random.randint(5, 86)
-        all_values[6] = data[1]  # fixed pos 2
+        all_values[6] = data[1] - 1  # fixed pos 2
         all_values[7] = np.random.randint(5, 86)
         all_values[8] = np.random.randint(5, 86)
         all_values[9] = np.random.randint(5, 86)
@@ -184,7 +184,7 @@ class Figure4:
 
             if i == 1 or i == 6:
                 # mark the max
-                barchart[96:97, left_bar+b_width//2:left_bar+b_width//2+1] = 1
+                barchart[97:98, left_bar+b_width//2:left_bar+b_width//2+1] = 1
 
         return barchart
 
