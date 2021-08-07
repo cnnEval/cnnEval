@@ -58,6 +58,10 @@ print ('Storing', STATSFILE)
 print ('Storing', MODELFILE)
 
 
+
+np.random.seed(int(RUN))
+random.seed(int(RUN))
+
 max_node = 99
 min_node = 20
 node_num = max_node - min_node + 1
