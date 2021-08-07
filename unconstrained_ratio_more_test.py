@@ -303,7 +303,7 @@ y_pred = model.predict(X_test_3D)
 
 # denormalize y_pred and y_test
 y_test = y_test * (y_max - y_min) + y_min
-y_pred = y_test * (y_max - y_min) + y_min
+y_pred = y_pred * (y_max - y_min) + y_min
 
 # compute MAE
 MAE = np.mean(np.abs(y_pred - y_test))
