@@ -58,6 +58,10 @@ print ('Storing', STATSFILE)
 print ('Storing', MODELFILE)
 
 
+np.random.seed(int(RUN))
+random.seed(int(RUN))
+
+
 max_cell = 159
 min_cell = 80
 cell_num = max_cell - min_cell + 1
