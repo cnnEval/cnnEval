@@ -64,6 +64,10 @@ print ('Storing', MODELFILE)
 
 
 
+np.random.seed(int(RUN))
+random.seed(int(RUN))
+
+
 # RATIO GENERATION
 if EXPERIMENT != 'type5':
     H = [float(i) for i in range(5, 86)]
