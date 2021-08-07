@@ -64,6 +64,10 @@ print ('Storing', MODELFILE)
 
 
 
+np.random.seed(int(RUN))
+random.seed(int(RUN))
+
+
 # HEIGHT GENERATION
 if EXPERIMENT != 'type5':
     H = [float(i) for i in range(6, 86)]
