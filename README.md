@@ -1,7 +1,7 @@
 # graphical-perception-with-cnn
 
 # Data
-Our cell/node counting data and the results of all our experiments are available on [Google Drive](https://drive.google.com/drive/folders/18w26-rn-8mLp7GxLPHGdiSvfb7vc61K-?usp=sharing), saved as csv files.
+Our cell/node counting data and the results of all our experiments are available on [Google Drive](https://drive.google.com/drive/folders/1KWjJv3Q3PMcWGtiN6gjtho_pcw4MvXId?usp=sharing), saved as csv files under Formatted folder.
 ## Attributes
 - **Type**: Visulization type of the bar chart as described in our paper, possible values are `1`, `2`, `3`, `4`, `5`.
 - **Method**: Sampling method, possible values are `IID`, `COV`, `ADV`, `MIN`.
