@@ -2,7 +2,7 @@
 
 # Codes
 To run the experiment, use `python {script} {bar_type} {method} {run_idx} {divisor}`,
-- **{bar_type}**: Visulization type of the bar chart. possible values are `1`, `2`, `3`, `4`, `5`. In our experiment we used `1` (position) and `4` (length).
+- **{bar_type}**: Visualization  type of the bar chart. possible values are `1`, `2`, `3`, `4`, `5`. In our experiment we used `1` (position) and `4` (length).
 - **{method}**: Sampling method, possible values are `IID`, `COV`, `ADV`, `OOD`.
 - **{run_idx}**: Works as a random seed of the the experiment.
 - **{divisor}**: Downsampling level of the experiment, the number of training samples will be 1/n of all training samples, possible values are `1`, `2`, `4`, `8`, `16`.
